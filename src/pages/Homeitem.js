@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Itemlist from '../components/Itemlist';
 import Navbar from '../components/Navbar';
+import BackToTop from "react-back-to-top-button";
 
 function Homeitem() {
   return (
@@ -20,6 +21,13 @@ function Homeitem() {
                 <img src={require('../image/plus.png')} alt='Add' />
             </Link>
         </div>
+    <BackToTop className="Up-button"
+        showOnScrollUp
+        showAt={100}
+        speed={1500}
+        easing="easeInOutQuint">
+        <span>scroll up</span>
+      </BackToTop>
     </div>
 
   )

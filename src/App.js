@@ -4,23 +4,21 @@ import Additem from "./pages/Additem"
 import Homeitem from './pages/Homeitem';
 import BarcodeScanner from './pages/BarcodeScanner';
 import Modaltest from './components/Modaltest';
+import axios from "axios";
 
 
-function App() {
+// async function App() {
 
-  // var session_url = 'http://api_address/api/session_endpoint';
-  // var username = 'user';
-  // var password = 'password';
-  // var credentials = btoa(username + ':' + password);
-  // var basicAuth = 'Basic ' + credentials;
-  // axios.post(session_url, {
-  //   headers: { 'Authorization': + basicAuth }
-  // }).then(function(response) {
-  //   console.log('Authenticated');
-  // }).catch(function(error) {
-  //   console.log('Error on Authentication');
-  // });
-  
+//   await axios.post('http://167.71.195.231:2095/auth/login', {}, {
+//     auth: {
+//       username: 'hello',
+//       password: 'psswd'
+//     }
+//   }).then(function(response) {
+//     console.log('Authenticated');
+//   }).catch(function(error) {
+//     console.log('Error on Authentication');
+//   });
   return (
     <BrowserRouter>
       
