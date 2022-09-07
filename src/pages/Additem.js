@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import Navhome from '../components/Navbar'
 
 function Additem() {
   return (
     <>
+      <Navhome />
       <div className="Add-Item">
-        <Navbar />
         <h1>Add item</h1>
         <div className="fixed-top-content">
               <Link to={`/Homeitem`}>

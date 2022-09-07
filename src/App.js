@@ -4,21 +4,11 @@ import Additem from "./pages/Additem"
 import Homeitem from './pages/Homeitem';
 import BarcodeScanner from './pages/BarcodeScanner';
 import Modaltest from './components/Modaltest';
-import axios from "axios";
+import Login from './pages/Login';
 
 
-// async function App() {
+function App() {
 
-//   await axios.post('http://167.71.195.231:2095/auth/login', {}, {
-//     auth: {
-//       username: 'hello',
-//       password: 'psswd'
-//     }
-//   }).then(function(response) {
-//     console.log('Authenticated');
-//   }).catch(function(error) {
-//     console.log('Error on Authentication');
-//   });
   return (
     <BrowserRouter>
       
@@ -28,6 +18,7 @@ import axios from "axios";
           <Route path='/BarcodeScanner' element={<BarcodeScanner />} />
           <Route path='*' element={<Homeitem />} />
           <Route path='/Modaltest' element={<Modaltest />} />
+          <Route path='/Login' element={<Login />} />
 
       </Routes>
       
