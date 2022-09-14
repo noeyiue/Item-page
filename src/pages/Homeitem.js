@@ -15,7 +15,7 @@ const mockItem2 = {
     Price : 62,
 }
 
-async function getTodo() {
+async function getItem() {
     const response = await fetch('http://167.71.195.231:2095/items')
     const items = await response.json()
     console.log(items)
@@ -27,7 +27,7 @@ function Homeitem() {
     function handleChange(event) {
         console.log(event.target.value);
       }
-    getTodo();
+    getItem();
 
 
   return (

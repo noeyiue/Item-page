@@ -14,11 +14,11 @@ function Additem() {
               </Link>
         </div>
       </div>
-      <div className="Scan-input">
+      <div className="Add-Item">
         <input className="Small-input" type="number" placeholder="Barcode Number" />
-        <Link to={`/BarcodeScanner`}>
+        {/* <Link to={`/BarcodeScanner`}>
           <img src={require('../image/scanbarcode.png')} alt='Previous'/>
-        </Link>
+        </Link> */}
       </div>
       <div className="Add-Item">
         <div className="Des-Item">
