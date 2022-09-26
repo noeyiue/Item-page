@@ -16,11 +16,28 @@ const mockItem2 = {
 }
 
 async function getItem() {
-    const response = await fetch('http://167.71.195.231:2095/items')
+    const response = await fetch("http://167.71.195.231:2095/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: "hello",
+        password: "psswd",
+      }),
+    });
+    const data = await response.json();
+    console.log(data);
+
+
+    await fetch('http://167.71.195.231:2095/items', {
+        method: "GET",
+        credentials: "include"
+    })
     const items = await response.json()
     console.log(items)
     return items
-}  
+    }  
 
 
 function Homeitem() {
